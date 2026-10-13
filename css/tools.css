@@ -1,0 +1,54 @@
+[hidden] { display: none !important; }
+.tool-nav { display: flex; gap: 22px; font-size: 14px; color: #46594d; }
+.tool-intro { padding-block: 56px 40px; }
+.tool-main { padding-bottom: 64px; }
+.tool-intro .intro-text { max-width: 680px; }
+.section-block { margin-bottom: 40px; }
+.search-panel, .tool-panel { background: white; border: 1px solid #dce2d9; border-radius: 18px; padding: 28px; margin-bottom: 24px; }
+.search-panel label, .field label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+input:not([type=radio]):not([type=checkbox]), textarea, select { width: 100%; padding: 12px 14px; border: 1px solid #ccd9cf; border-radius: 9px; background: #fafbf9; color: #202b25; font: inherit; font-size: 16px; min-width: 0; }
+textarea { min-height: 140px; resize: vertical; }
+input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #27744f; outline-offset: 3px; }
+button { font: inherit; cursor: pointer; }
+.filters, .tool-picker, .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.pill { padding: 9px 16px; background: white; border: 1px solid #ccd9cf; border-radius: 9px; font-size: 14px; color: #46594d; }
+.pill[aria-pressed=true] { background: #235b40; border-color: #235b40; color: white; }
+.muted, .help { color: #526158; font-size: 13px; }
+.result-count { margin: 18px 0 0; color: #526158; font-size: 13px; }
+.source-card .category { margin-bottom: 12px; }
+.source-card h3 { font-size: 20px; }
+.source-card p { margin-bottom: 18px; }
+.source-card small { color: #526158; display: block; font-size: 12px; overflow-wrap: anywhere; }
+.source-card .card-action { margin-top: 18px; }
+.formula-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.formula { padding: 22px; background: #edf3e9; border-radius: 14px; }
+.formula h3 { font-size: 17px; }
+.formula p { margin: 8px 0; font-size: 14px; }
+.formula small { color: #526158; font-size: 12px; }
+.note { padding: 14px 18px; border-left: 3px solid #82a88d; background: #edf3e9; font-size: 13px; color: #46594d; margin: 20px 0; }
+.empty { padding: 28px; text-align: center; border: 1px dashed #ccd9cf; border-radius: 12px; color: #526158; }
+.tool-picker { margin: 0 0 24px; }
+.tool-panel > h2 { margin-bottom: 8px; }
+.tool-panel > p { color: #526158; margin: 0 0 24px; font-size: 14px; }
+.field { margin-bottom: 20px; min-width: 0; }
+.field .help { margin: 6px 0 0; }
+.field-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 20px; }
+.action-button { border: 0; background: #235b40; color: white; padding: 11px 20px; border-radius: 9px; font-size: 14px; }
+.action-button:hover { background: #17482f; }
+.secondary { background: #edf3e9; border: 1px solid #ccd9cf; color: #235b40; }
+.error { color: #9d3425; font-size: 14px; }
+.output { margin-top: 24px; border-top: 1px solid #dce2d9; padding-top: 24px; overflow-wrap: anywhere; }
+.output:empty { display: none; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 14px; }
+.metric { background: #edf3e9; border-radius: 12px; padding: 16px; }
+.metric dt { color: #526158; font-size: 13px; }
+.metric dd { margin: 6px 0 0; color: #235b40; font-weight: 700; font-size: 24px; }
+.table-wrap { overflow-x: auto; margin-top: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; border-bottom: 1px solid #dce2d9; padding: 10px 12px; }
+th { background: #f0f4ed; }
+.chart { width: 100%; max-height: 360px; display: block; margin-block: 20px; }
+.copy-feedback { font-size: 13px; color: #526158; min-height: 22px; }
+.details { margin: 20px 0; font-size: 13px; color: #526158; }
+.details summary { cursor: pointer; color: #235b40; }
+@media(max-width:600px) { .tool-nav { gap: 12px; font-size: 12px; } .logo { gap: 8px; font-size: 16px; } .tool-intro { padding-block: 40px 24px; } .search-panel,.tool-panel { padding: 20px; } .formula-grid,.field-grid { grid-template-columns: 1fr; } .tool-picker .pill { flex: 1 1 auto; } .tool-main { padding-bottom: 40px; } }
