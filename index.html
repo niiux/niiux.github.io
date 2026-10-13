@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NIIU'S TOOL</title>
-    <!-- CSS -->
+    <meta name="description" content="NT 工具库：整理实用站点、轻量软件与 AI 技巧，让日常工作更轻松。" />
+    <title>NT 工具库 · 让工作更轻松</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="img/x66.png">
+    <link rel="icon" type="image/png" href="img/x66.png" />
   </head>
   <body>
-    <div class="blurred-wrapper">
-      <header class="main-header container">
-        <a href="index.html" class="logo">NT工具库</a>
-        <a href="#" class="btn sign-up">进入</a>        
-      </header>
-
-      <section class="hero container">
-        <div class="content-wrapper">
-          <h5 class="tagline">More than just a tool box</h5>
-          <h1 class="title">
-            Make working easier by using NT<span>.</span>
-          </h1>
-          <p class="message">
-            这是一个私人的效率工具整理库。
-          </p>          
-          <a href="page2_goodsites/gsite.html" target="_blank" class="btn cta">效率站点</a>
-          <a href="https://xni.notion.site/b903fe3bb1a64db2b8d6a553377cfcaa" target="_blank" class="btn cta">轻量软件</a>
-          <a href="https://xni.notion.site/AGI-386c3eeb67be47eb973186877bac6f72" target="_blank" class="btn cta">AGI-技巧</a>
-          <a href="https://xni.notion.site/AI-demo-4b6752da9cfe42b898f39922924bda42" target="_blank" class="btn cta">Ai-小杂技</a>
+    <a class="skip-link" href="#main">跳转到主要内容</a>
+    <header class="header container">
+      <a href="index.html" class="logo" aria-label="NT 工具库首页"><span class="logo-mark">NT</span><span>工具库</span></a>
+      <a class="nav-link" href="#collections">浏览工具 <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main" class="container">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">NIIU’S COLLECTION</p>
+        <h1 id="page-title">好用的工具，<br />让工作<span>轻松一点。</span></h1>
+        <p class="intro-text">一个私人的效率工具整理库。把实用的站点、轻量的软件和 AI 灵感，收在一个方便找到的地方。</p>
+        <a class="primary-link" href="#collections">探索工具库 <span aria-hidden="true">↓</span></a>
+      </section>
+      <section class="collections" id="collections" aria-labelledby="collections-title">
+        <div class="section-heading"><h2 id="collections-title">从这里开始</h2><p>按需要，找到你的下一件工具。</p></div>
+        <div class="card-grid">
+          <a class="card" href="page2_goodsites/gsite.html">
+            <span class="card-top"><span class="category">01 / WEBSITES</span><span class="arrow" aria-hidden="true">↗</span></span>
+            <h3>效率站点</h3><p>搜索、传输、格式转换。打开浏览器，就能用上。</p><span class="card-action">浏览站点 <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="card" href="https://xni.notion.site/b903fe3bb1a64db2b8d6a553377cfcaa" target="_blank" rel="noopener noreferrer">
+            <span class="card-top"><span class="category">02 / SOFTWARE</span><span class="arrow" aria-hidden="true">↗</span></span>
+            <h3>轻量软件</h3><p>小巧、顺手的实用软件，让日常操作少一些繁琐。</p><span class="card-action">查看整理 <span class="new-tab">· 新窗口</span></span>
+          </a>
+          <a class="card" href="https://xni.notion.site/AGI-386c3eeb67be47eb973186877bac6f72" target="_blank" rel="noopener noreferrer">
+            <span class="card-top"><span class="category">03 / AI TIPS</span><span class="arrow" aria-hidden="true">↗</span></span>
+            <h3>AI 使用技巧</h3><p>收集 AI 的使用方法与思路，把灵感带进工作里。</p><span class="card-action">阅读技巧 <span class="new-tab">· 新窗口</span></span>
+          </a>
+          <a class="card" href="https://xni.notion.site/AI-demo-4b6752da9cfe42b898f39922924bda42" target="_blank" rel="noopener noreferrer">
+            <span class="card-top"><span class="category">04 / EXPERIMENTS</span><span class="arrow" aria-hidden="true">↗</span></span>
+            <h3>AI 小实验</h3><p>一些有趣的演示与尝试，看看 AI 还能做些什么。</p><span class="card-action">发现灵感 <span class="new-tab">· 新窗口</span></span>
+          </a>
         </div>
       </section>
-    </div>
+    </main>
+    <footer class="footer container"><span>NT 工具库</span><p>少一点寻找，多一点专注。</p></footer>
   </body>
 </html>
