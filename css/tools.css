@@ -52,3 +52,6 @@ th { background: #f0f4ed; }
 .details { margin: 20px 0; font-size: 13px; color: #526158; }
 .details summary { cursor: pointer; color: #235b40; }
 @media(max-width:600px) { .tool-nav { gap: 12px; font-size: 12px; } .logo { gap: 8px; font-size: 16px; } .tool-intro { padding-block: 40px 24px; } .search-panel,.tool-panel { padding: 20px; } .formula-grid,.field-grid { grid-template-columns: 1fr; } .tool-picker .pill { flex: 1 1 auto; } .tool-main { padding-bottom: 40px; } }
+
+.field-grid > .field:only-child, .field-grid > .wide { grid-column: 1 / -1; }
+.amount-uppercase { color: #235b40; font-size: 24px; line-height: 1.7; font-weight: 600; }
