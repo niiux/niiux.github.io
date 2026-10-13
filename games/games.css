@@ -18,3 +18,21 @@ button:focus-visible { outline: 3px solid #27744f; outline-offset: 3px; }
 .game-note { text-align: center; font-size: 12px; color: #526158; margin: 20px 0; }
 .other-game { display: block; text-align: center; color: #235b40; font-size: 14px; }
 @media (max-width: 480px) { .game-shell { padding-block: 32px; } .game-panel { padding: 16px; } .board { gap: 8px; } }
+
+.binary-shell { max-width: 880px; }
+.number-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.number-card { position: relative; cursor: pointer; }
+.number-card > input { position: absolute; top: 22px; right: 20px; width: 20px; height: 20px; accent-color: #235b40; cursor: pointer; }
+.number-panel { display: block; border: 1px solid #dce2d9; border-radius: 16px; background: #fff; padding: 20px; }
+.number-heading { display: block; font-weight: 600; margin-bottom: 18px; }
+.numbers { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 8px 4px; font-size: 14px; text-align: center; font-variant-numeric: tabular-nums; }
+.number-choice { display: block; margin-top: 18px; color: #526158; font-size: 13px; }
+.number-card > input:checked + .number-panel { background: #edf3e9; border-color: #27744f; }
+.number-card > input:checked + .number-panel .number-choice { color: #235b40; font-weight: 600; }
+.number-card > input:focus-visible + .number-panel { outline: 3px solid #27744f; outline-offset: 3px; }
+.guess-actions { display: flex; gap: 12px; margin-top: 24px; }
+.guess-button { border: 0; font: inherit; cursor: pointer; }
+.guess-answer { min-height: 40px; color: #235b40; font-size: 22px; font-weight: 600; }
+.explanation { font-size: 14px; color: #526158; }
+.explanation summary { cursor: pointer; color: #235b40; font-weight: 600; }
+@media (max-width: 600px) { .number-cards { grid-template-columns: 1fr; } .number-panel { padding: 18px; } }
